@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeaherForecastApp.Views.BackUpCopyTemplate">
+    <Grid Grid.Row="1" HeightRequest="500" RowSpacing="0" VerticalOptions="FillAndExpand" Margin="0,-10,0,230">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid BackgroundColor="#758ABA" Opacity="0.4">
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="NameCity" Text="London" TextColor="White" FontSize="Large" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Padding="10,0,0,0" FontAttributes="Bold" TextTransform="Uppercase"/>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                    <Image x:Name="iconImg" Source="cloud.png" WidthRequest="67" HeightRequest="45"/>
+                    <Label x:Name="descriptionTxt" Text="Cloudy" TextColor="White" FontSize="13" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="0">
+                    <Label x:Name="temperatureTxt" Text="25" TextColor="White" FontSize="70" VerticalOptions="Center" FontAttributes="Italic"/>
+                    <Label Text="°" TextColor="White" FontSize="50" VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+        <Grid BackgroundColor="#758ABA" Opacity="0.6" Grid.Row="1">
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="NameCity1" Text="washington" TextColor="White" FontSize="Large" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Padding="10,0,0,0" FontAttributes="Bold" TextTransform="Uppercase"/>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                    <Image x:Name="iconImg1" Source="cloud.png" WidthRequest="67" HeightRequest="45"/>
+                    <Label x:Name="descriptionTxt1" Text="Cloudy" TextColor="White" FontSize="13" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="0">
+                    <Label x:Name="temperatureTxt1" Text="19" TextColor="White" FontSize="70" VerticalOptions="Center" FontAttributes="Italic"/>
+                    <Label Text="°" TextColor="White" FontSize="50" VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+        <Grid BackgroundColor="#758ABA" Opacity="0.8" Grid.Row="2">
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="NameCity2" Text="sydney" TextColor="White" FontSize="Large" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Padding="10,0,0,0" FontAttributes="Bold" TextTransform="Uppercase"/>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                    <Image x:Name="iconImg2" Source="cloud.png" WidthRequest="67" HeightRequest="45"/>
+                    <Label x:Name="descriptionTxt2" Text="Cloudy" TextColor="White" FontSize="13" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="0">
+                    <Label x:Name="temperatureTxt2" Text="13" TextColor="White" FontSize="70" VerticalOptions="Center" FontAttributes="Italic"/>
+                    <Label Text="°" TextColor="White" FontSize="50" VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+        <Grid BackgroundColor="#758ABA" Opacity="3" Grid.Row="3">
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="NameCity3" Text="sydney" TextColor="White" FontSize="Large" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Padding="10,0,0,0" FontAttributes="Bold" TextTransform="Uppercase"/>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                    <Image x:Name="iconImg3" Source="cloud.png" WidthRequest="67" HeightRequest="45"/>
+                    <Label x:Name="descriptionTxt3" Text="Cloudy" TextColor="White" FontSize="13" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="0">
+                    <Label x:Name="temperatureTxt3" Text="11" TextColor="White" FontSize="70" VerticalOptions="Center" FontAttributes="Italic"/>
+                    <Label Text="°" TextColor="White" FontSize="50" VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentView>

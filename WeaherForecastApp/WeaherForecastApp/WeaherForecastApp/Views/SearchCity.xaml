@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeaherForecastApp.Views.SearchCity">
+    <StackLayout x:Name="MainContainer" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Aqua">
+        <StackLayout BackgroundColor="#26a9b5">
+            <Label Text="Виберіть місто" HorizontalOptions="Center" VerticalOptions="Center" FontSize="30" TextColor="Black" FontAttributes="Bold"/>
+            <Image Source="iconmap.png" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="120" HeightRequest="120"/>
+        </StackLayout>
+        <Frame BackgroundColor="#fcfcfc" Margin="70,0" Padding="15" CornerRadius="15">
+            <Entry x:Name="WeatherInput" Placeholder="Введіть місто" TextColor="Black" BackgroundColor="CornflowerBlue"/>
+        </Frame>
+        <Button x:Name="ApplyBtn" Text="Застосувати" BorderColor="Black" TextColor="DarkGreen" BackgroundColor="OrangeRed" CornerRadius="40" Margin="70,0" Clicked="ApplyBtn_Clicked"/>
+    </StackLayout>
+</ContentPage>

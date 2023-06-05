@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeaherForecastApp.Views.Locations">
+    <StackLayout x:Name="MainContainer" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout VerticalOptions="StartAndExpand" Padding="0,0,0,40" BackgroundColor="#7585BA">
+            <StackLayout Orientation="Horizontal" Padding="20">
+                <ImageButton x:Name="ReturnMain" Source="menu.png" WidthRequest="23" HeightRequest="23" Clicked="ImageBtn_Clicked"/>
+                <Label Text="Locations" TextColor="White" FontSize="Large" Margin="10, 0, 0, 0" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="0,0,0,-35">
+                <Label x:Name="NowDay" Text="Saturday, nov 30" TextColor="White" FontSize="13" Padding="10,0,0,0" VerticalOptions="EndAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout x:Name="InputWeather"/>
+        <StackLayout HorizontalOptions="EndAndExpand" Margin="0,0,30,60">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Frame BackgroundColor="LightGray" CornerRadius="60">
+                    <Button Text="+"
+                    BackgroundColor="#758ABA"
+                    HeightRequest="60"
+                    WidthRequest="60"
+                    FontSize="30"
+                    TextColor="White"
+                    BorderRadius="{OnPlatform Android='300', iOS='20'}" 
+                    Clicked="SelectCity_BtnClicked"
+                    x:Name="BtnChangeCity"/>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
